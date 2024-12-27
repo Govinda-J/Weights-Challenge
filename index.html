@@ -117,6 +117,7 @@
             if (isCorrect) {
                 validationMessage.textContent = "Correct Answer!";
                 validationMessage.style.color = "yellow";
+                document.getElementById('weightsOutput').innerHTML = "";
                 done = true;
             } else {
                 validationMessage.textContent = "Incorrect weights, please try again!";
@@ -125,6 +126,7 @@
                 document.getElementById('weight2').value = "";
                 document.getElementById('weight3').value = "";
                 document.getElementById('weight4').value = "";
+                document.getElementById('weightsOutput').innerHTML = "";
             }
         });
 
